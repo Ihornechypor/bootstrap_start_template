@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
-	.pipe(gulp.dest('distr/js'))
+	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
